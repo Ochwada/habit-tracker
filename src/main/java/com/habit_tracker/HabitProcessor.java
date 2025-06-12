@@ -48,7 +48,7 @@ public class HabitProcessor {
         return habits
                 .stream()
                 .filter(condition)
-                .collect(Collectors.toList());
+                ..toList();
     }
 
     /**
@@ -67,7 +67,7 @@ public class HabitProcessor {
         return habits
                 .stream()
                 .map(habitMapper)
-                .collect(Collectors.toList());
+                .toList();
     }
 
     /**
